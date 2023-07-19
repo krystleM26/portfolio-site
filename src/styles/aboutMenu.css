@@ -1,0 +1,9 @@
+.menu {
+  width: 19rem;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 60%;
+  transform: translateY(-60%);
+  left: 20vh;
+}

@@ -1,3 +1,6 @@
+import React, { Component }  from 'react';
+
+
 const subheadingsData = {
     1:[
         {
@@ -66,13 +69,14 @@ const subheadingsData = {
         {
             title: "2010 Freelance Writer",
             content: (
-                <div>
+                <>
                      <p>
                      Lorem ipsum kjdsja hfjdhfkjhdjkfhdaj fhdajkfhjdkhfjkdhfkjhdfjkhdajkfhjkdahfkjdh ajfjhfjhdfjhdj fhdjhfjkadhfjadhf ahfjdahfjkhdaf jkahfdhfadjfhafh jahdfjkhadf 
                      </p>
                 
                 
-                </div>
+                </>
+
             ),
         },
     ],
