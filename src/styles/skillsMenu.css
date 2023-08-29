@@ -114,7 +114,6 @@ skill-sub-container-2 {
   .skill-sub-container-1,
   .skill-sub-container-2 {
     gap: 0.2rem;
-   
   }
   .skill-sub-container {
     margin-top: 2rem;
@@ -127,20 +126,20 @@ skill-sub-container-2 {
   h2,
   h3,
   p {
-  font-size: 0.7rem;
+    font-size: 0.7rem;
   }
 
   .skill-menu {
-  flex-direction: column;
-  left: 50%;
-  transform: translateX(-50%);
-  align-items: center;
-  top: 30%;
+    flex-direction: column;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    top: 30%;
   }
 
   .skill-item {
-  height: 2rem;
-  width: 12rem;
+    height: 2rem;
+    width: 12rem;
   }
 }
 
