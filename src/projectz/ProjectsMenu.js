@@ -35,8 +35,8 @@ export default class ProjectsMenu extends Component {
   };
 
   render() {
-    console.log('helloasdasdas', this.state);
-    console.log('projects', projects);
+    // console.log('helloasdasdas', this.state);
+    // console.log('projects', projects);
     let { activeProject } = this.state;
     return (
       <div className="project-menu">
