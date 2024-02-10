@@ -1,4 +1,5 @@
 .avatar {
+  width: 38%;
   position: fixed;
   overflow: hidden;
   z-index: -2;
