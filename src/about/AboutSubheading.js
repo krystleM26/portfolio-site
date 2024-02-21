@@ -1,24 +1,22 @@
-import React from 'react';
-
-import '../styles/aboutMenu.css';
-
-const AboutSubheading = (title, content
-) => {
+import React from 'react'
+import classNames from 'classnames'
+import '../styles/aboutMenu.css'
 
 
-function handleTitle  ()  {
- alert('Title Clicked')
+
+const AboutSubheading = ({ title, content, active, onClick, menuItem }) => {
+  const subContainerClass = `sub-container-${menuItem}`
+
+    return (
+      <div className={classNames(subContainerClass, { "active-subheading": active })}
+      >
+      <h3 onClick={onClick} >{title}</h3>
+        <div className="p-container">{content}</div>
+      </div>
+    )
+  
 }
 
- 
-  return (
-    <div
-      
-    >
-      <h3 onClick={handleTitle}>{title}</h3>
-      <div className="p-container">{content}</div>
-    </div>
-  );
-};
 
-export default AboutSubheading;
+
+export default AboutSubheading ;

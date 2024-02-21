@@ -6,9 +6,9 @@ export default class About extends Component {
   render() {
     return (
    
-      <>
+     <>
       About
-      <Avatar page="About" />
+      <Avatar page="about" />
       {/* <AboutMenu /> */}
       </>
     ); 
