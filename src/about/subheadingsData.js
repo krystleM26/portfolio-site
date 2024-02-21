@@ -1,69 +1,51 @@
 import React from "react"
+
 const subheadingsData = {
     1:[
         {
             title: "About Me",
             content: (
                 <>
-                     <p>
+                <p>
                     Lorem ipsum kjdsja hfjdhfkjhdjkfhdaj 
                     fhdajkfhjdkhfjkdhfkjhdfjkhdajkfhjkdahfkjdh ajfjhfjhdfjhdj
                      fhdjhfjkadhfjadhf ahfjdahfjkhdaf jkahfdhfadjfhafh 
-                     </p>
+                </p>
              
                 </>
             ),
         },
     ],
-
     2:[
         {
-            title: "2024 FullStack Developer",
+            title: "FullStack  2024",
             content: (
                 <>
-                     <p>
+                <p>
                     Lorem ipsum kjdsja hfjdhfkjhdjkfhdaj 
                     fhdajkfhjdkhfjkdhfkjhdfjkhdajkfhjkdahfkjdh ajfjhfjhdfjhdj
                      fhdjhfjkadhfjadhf ahfjdahfjkhdaf jkahfdhfadjfhafh 
-                     </p>
+                </p>
              
                 </>
             ),
         },
     ],
-
     3:[
         {
-            title: "Content Writer",
+            title: "Free-lance Developer",
             content: (
                 <>
-                     <p>
+                <p>
                     Lorem ipsum kjdsja hfjdhfkjhdjkfhdaj 
                     fhdajkfhjdkhfjkdhfkjhdfjkhdajkfhjkdahfkjdh ajfjhfjhdfjhdj
                      fhdjhfjkadhfjadhf ahfjdahfjkhdaf jkahfdhfadjfhafh 
-                     </p>
+                </p>
              
                 </>
             ),
         },
     ],
-
-    4:[
-        {
-            title: "Office Manager",
-            content: (
-                <>
-                     <p>
-                    Lorem ipsum kjdsja hfjdhfkjhdjkfhdaj 
-                    fhdajkfhjdkhfjkdhfkjhdfjkhdajkfhjkdahfkjdh ajfjhfjhdfjhdj
-                     fhdjhfjkadhfjadhf ahfjdahfjkhdaf jkahfdhfadjfhafh 
-                     </p>
-             
-                </>
-            ),
-        },
-    ],
-
 }
 
-export default subheadingsData
+export default subheadingsData;

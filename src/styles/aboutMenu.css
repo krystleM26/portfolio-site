@@ -67,7 +67,8 @@
 }
 
 .p-container {
-  display: none;
+  display: column;
+  color:aliceblue;
 }
 
 .active-subheading .p-container {

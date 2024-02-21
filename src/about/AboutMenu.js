@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import AboutMenuItem from "./AboutMenuItem";
 import AboutSubheading from "./AboutSubheading";
-import subheadingData from "./subheadingsData";
+import subheadingsData from "./subheadingsData";
 
 import personalIcon from '../assets/moebius-triangle.png';
 import educationIcon from '../assets/upgrade.png'
@@ -41,14 +41,11 @@ handleSubheadingClick = (subheading) => {
     const activeMenuTitle = menuItems[activeMenuItem - 1];
     const activeMenuIcon = activeMenuTitle === "PERSONAL" ? personalIcon : activeMenuTitle === "EDUCATION" ? educationIcon : careerIcon;
       
-      
 
-    const subheadings = subheadingData[activeMenuIcon] || [];
-    
-
-
-
-
+    console.log(subheadingsData)
+    console.log('active',activeMenuIcon)
+    const subheadings = subheadingsData[activeSubheading] || [];
+    console.log('susb',subheadings)
 
     return (
     <>
@@ -72,17 +69,22 @@ handleSubheadingClick = (subheading) => {
             <h3>{activeMenuTitle}</h3>
 
           </div>
-          {subheadings.map((subheading, index) => {
-            <AboutSubheading
+          
+          {subheadings.map((subheading, index) => 
+             <AboutSubheading
             key={index}
             title={subheading.title}
             content={subheading.content}
             active={activeSubheading === index + 1}
             onClick={() => this.handleSubheadingClick(index + 1)}
-            menuItem={activeMenuItem}
-            />;
-          })}
+            subheading={activeSubheading}
+            /> )}
         </div>
+       
+
+       
+
+       
       </>
     );
   }
