@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Avatar from "../avatar/Avatar.js";
-// import AboutMenu from './AboutMenu.js'
+import AboutMenu from './AboutMenu.js'
 
 export default class About extends Component {
   render() {
@@ -9,7 +9,7 @@ export default class About extends Component {
      <>
       About
       <Avatar page="about" />
-      {/* <AboutMenu /> */}
+      <AboutMenu />
       </>
     ); 
   }

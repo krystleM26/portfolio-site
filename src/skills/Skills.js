@@ -7,7 +7,7 @@ export default class Skills extends Component {
     return (
       <>
       SkillsMenu
-      <Avatar page="skills" />
+      <Avatar page="Skills" />
       <SkillsMenu />
       
       </>
