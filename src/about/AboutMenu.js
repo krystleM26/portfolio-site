@@ -42,43 +42,41 @@ handleSubheadingClick = (subheading) => {
     const activeMenuIcon = activeMenuTitle === "PERSONAL" ? personalIcon : activeMenuTitle === "EDUCATION" ? educationIcon : careerIcon;
       
 
-    console.log(subheadingsData)
-    console.log('active',activeMenuIcon)
-    const subheadings = subheadingsData[activeSubheading] || [];
-    console.log('susb',subheadings)
+   
+    const subheadings = subheadingsData[activeMenuItem] || [];
+    
 
     return (
     <>
     
       <div className="menu"> 
        {menuItems.map((item, index) => (
-
-       
         <AboutMenuItem
-        key={index}
-        title={item}
-        active={activeMenuIcon === index + 1}
-        onClick={() => this.handleMenuItemClick(index + 1)}
+          key={index}
+          title={item}
+          active={activeMenuIcon === index + 1}
+          onClick={() => this.handleMenuItemClick(index + 1)}
         />
-        ))}
+      ))}
     </div>
 
         <div className="sub-container">
-          <div className="icon-title-container">
-            <img src={activeMenuIcon} alt={activeMenuTitle} className="icon" />
-            <h3>{activeMenuTitle}</h3>
-
-          </div>
+            <div className="icon-title-container">
+              <img src={activeMenuIcon} alt={activeMenuTitle} className="icon" />
+              <h3>{activeMenuTitle}</h3>
+            </div>
           
-          {subheadings.map((subheading, index) => 
-             <AboutSubheading
-            key={index}
-            title={subheading.title}
-            content={subheading.content}
-            active={activeSubheading === index + 1}
-            onClick={() => this.handleSubheadingClick(index + 1)}
-            subheading={activeSubheading}
-            /> )}
+          {subheadings.map((subheading, index) => (
+              <AboutSubheading
+              key={index}
+              title={subheading.title}
+              content={subheading.content}
+              active={activeSubheading === index + 1}
+              onClick={() => this.handleSubheadingClick(index + 1)}
+              menuItem={activeMenuItem}
+              
+              /> 
+            ))}
         </div>
        
 

@@ -30,16 +30,29 @@ const subheadingsData = {
                 </>
             ),
         },
-    ],
-    3:[
         {
-            title: "Free-lance Developer",
+            title: "Journalisn  2024",
             content: (
                 <>
                 <p>
                     Lorem ipsum kjdsja hfjdhfkjhdjkfhdaj 
                     fhdajkfhjdkhfjkdhfkjhdfjkhdajkfhjkdahfkjdh ajfjhfjhdfjhdj
                      fhdjhfjkadhfjadhf ahfjdahfjkhdaf jkahfdhfadjfhafh 
+                </p>
+             
+                </>
+            ),
+        },
+    ],
+    3:[
+        {
+            title: "Freelance Developer",
+            content: (
+                <>
+                <p>
+                    Lorem ipsum kjdsja hfjdhfkjhdjkfhdaj 
+                    fhdajkfhjdkhfjkdhfkjhdfjkhdajkfhjkdahfkjdh ajfjhfjhdfjhdj
+                    fhdjhfjkadhfjadhf ahfjdahfjkhdaf jkahfdhfadjfhafh 
                 </p>
              
                 </>
