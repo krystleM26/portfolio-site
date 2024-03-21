@@ -18,7 +18,7 @@ const subheadingsData = {
     ],
     2:[
         {
-            title: "FullStack  2024",
+            title: "FullStack Developer",
             content: (
                 <>
                 <p>
@@ -31,7 +31,7 @@ const subheadingsData = {
             ),
         },
         {
-            title: "Journalisn  2024",
+            title: "Journalisn",
             content: (
                 <>
                 <p>
@@ -46,7 +46,33 @@ const subheadingsData = {
     ],
     3:[
         {
-            title: "Freelance Developer",
+            title: "Web Developer",
+            content: (
+                <>
+                <p>
+                    Lorem ipsum kjdsja hfjdhfkjhdjkfhdaj 
+                    fhdajkfhjdkhfjkdhfkjhdfjkhdajkfhjkdahfkjdh ajfjhfjhdfjhdj
+                    fhdjhfjkadhfjadhf ahfjdahfjkhdaf jkahfdhfadjfhafh 
+                </p>
+             
+                </>
+            ),
+        },
+        {
+            title: "Office Manager",
+            content: (
+                <>
+                <p>
+                    Lorem ipsum kjdsja hfjdhfkjhdjkfhdaj 
+                    fhdajkfhjdkhfjkdhfkjhdfjkhdajkfhjkdahfkjdh ajfjhfjhdfjhdj
+                    fhdjhfjkadhfjadhf ahfjdahfjkhdaf jkahfdhfadjfhafh 
+                </p>
+             
+                </>
+            ),
+        },
+        {
+            title: "Admin Assistant",
             content: (
                 <>
                 <p>
