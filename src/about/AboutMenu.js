@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import AboutMenuItem from "./AboutMenuItem";
 import AboutSubheading from "./AboutSubheading";
 import subheadingsData from "./subheadingsData";
-
+import "../styles/aboutMenu.css";
 import personalIcon from '../assets/moebius-triangle.png';
 import educationIcon from '../assets/upgrade.png'
 import careerIcon from '../assets/triple-corn.png'
@@ -35,7 +35,6 @@ handleSubheadingClick = (subheading) => {
 
 
   render() {
-
     const {activeMenuItem, activeSubheading} = this.state;
     const menuItems = ["PERSONAL", "EDUCATION", "CAREER"];
     const activeMenuTitle = menuItems[activeMenuItem - 1];
@@ -54,7 +53,7 @@ handleSubheadingClick = (subheading) => {
         <AboutMenuItem
           key={index}
           title={item}
-          active={activeMenuIcon === index + 1}
+          active={activeMenuItem === index + 1}
           onClick={() => this.handleMenuItemClick(index + 1)}
         />
       ))}
@@ -87,3 +86,7 @@ handleSubheadingClick = (subheading) => {
     );
   }
 }
+
+
+
+

@@ -17,7 +17,7 @@ const AboutSubheading = ({ title, content, active, onClick, menuItem }) => {
 
   
   const subContainerClass = `sub-container-${menuItem}`
-    console.log('content',content);
+    
     return (
       <div className={classNames(subContainerClass, { "active-subheading": active })} >
       <h3 onClick={onClick}>{title}</h3>

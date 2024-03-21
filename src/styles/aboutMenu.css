@@ -18,10 +18,10 @@
 
   .title {
     font-size: 1rem;
-    padding: 2.5rem;
+    padding-right: 2.5rem;
   }
 
-  .item.active .title {
+  .item.active  .title {
     font-size: 1.5rem;
   }
 
@@ -39,18 +39,20 @@
     cursor: default;
   }
 
-  .menu.item.title:nth-child(1) {
-    background: linear-gradient(90deg,  var(--purple) 20%);
+  .item.active:nth-child(1) {
+    background: linear-gradient(90deg, var(--transparent), var(--purple) 70%);
     border-radius: var(--radius-right);
   }
   .item.active:nth-child(2) {
-    background: linear-gradient(90deg, var(--transparent), var(--blue), 80%);
+    background: linear-gradient(90deg, var(--transparent), var(--blue) 70%);
     border-radius: var(--radius-right);
   }
   .item.active:nth-child(3) {
-    background: linear-gradient(90deg, var(--transparent), var(--cyan), 70%);
+    background: linear-gradient(90deg, var(--transparent), var(--cyan) 70%);
     border-radius: var(--radius-right);
   }
+
+  
 
   .sub-container-1.active-subheading h3,
   .sub-container-1.active-subheading h3,
@@ -68,3 +70,24 @@
     background: linear-gradient(90deg, var(--cyan), var(--transparent) 100%);
   }
 
+  .item.active {
+    position: relative;
+    cursor: default;
+  }
+
+.p-container {
+  display: none;
+}
+
+.active-subheading .p-container {
+  display: block;
+  font-size: 1rem;
+
+}
+
+.icon-title-container {
+  display: flex;
+  gap: 1.2rem;
+  margin-bottom: 0.5rem;
+  cursor: default;
+}
