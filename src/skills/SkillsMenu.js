@@ -4,7 +4,6 @@ import '../styles/skillsMenu.css';
 import skills from './skillsData.js';
 import frontendIcon from '../assets/eagle-emblem.png';
 import backendIcon from '../assets/hawk-emblem.png';
-// import Avatar from '../assets/portfolio-left.png';
 
 
 export default class SkillsMenu extends Component {
@@ -47,10 +46,11 @@ export default class SkillsMenu extends Component {
     const menuItems = ["FRONT-END", "BACK-END"];
 
     const curIcon = activeMenuItem === 1 ? frontendIcon : backendIcon;
+    console.log(curIcon, 'curIcon')
 
     return (
       <div className="skill-menu">
-        {menuItems.map((item, index) => {
+        {menuItems.map((item, index) => (
           <div
             key={index}
             className={classNames('skill-item', {
@@ -59,8 +59,8 @@ export default class SkillsMenu extends Component {
             onClick={() => this.handleMenuItemClick(index + 1)}
           >
             <h2 className="skill-title">{item}</h2>
-          </div>;
-        })}
+          </div>
+        ))}
         <img className="skill-icon" src={curIcon} alt="current skill" />
         <div className="skill-sub-container">
           {this.renderContent(skills[activeMenuItem])}
