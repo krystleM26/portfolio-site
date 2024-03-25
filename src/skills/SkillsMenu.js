@@ -4,6 +4,8 @@ import '../styles/skillsMenu.css';
 import skills from './skillsData.js';
 import frontendIcon from '../assets/eagle-emblem.png';
 import backendIcon from '../assets/hawk-emblem.png';
+// import Avatar from '../assets/portfolio-left.png';
+
 
 export default class SkillsMenu extends Component {
   constructor(props) {
