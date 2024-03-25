@@ -24,7 +24,7 @@
 }
 
 .skill-item.activeSkill .skill-title {
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .activeSkill {
@@ -33,7 +33,7 @@
 }
 
 .skill-item.activeSkill:nth-child(1) {
-  background-color: linear-gradient(270deg, #ffffff00, var(--purple) 70%);
+  background: linear-gradient(270deg, #ffffff00, var(--purple) 70%);
 }
 .skill-item.activeSkill:nth-child(2) {
   background: linear-gradient(270deg, #ffffff00, var(--blue) 70%);
