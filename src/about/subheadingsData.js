@@ -57,10 +57,12 @@ const subheadingsData = {
             content: (
                 <>
                 <p>
-                    Lorem ipsum kjdsja hfjdhfkjhdjkfhdaj 
-                    fhdajkfhjdkhfjkdhfkjhdfjkhdajkfhjkdahfkjdh ajfjhfjhdfjhdj
-                    fhdjhfjkadhfjadhf ahfjdahfjkhdaf jkahfdhfadjfhafh 
-                </p>
+                  Help staff with technical issues.                </p>
+                  <p>
+                  Input scheudules and payroll              </p>
+                  <p>
+                  Maintain wordpress website.             </p>
+
              
                 </>
             ),
@@ -70,9 +72,7 @@ const subheadingsData = {
             content: (
                 <>
                 <p>
-                    Lorem ipsum kjdsja hfjdhfkjhdjkfhdaj 
-                    fhdajkfhjdkhfjkdhfkjhdfjkhdajkfhjkdahfkjdh ajfjhfjhdfjhdj
-                    fhdjhfjkadhfjadhf ahfjdahfjkhdaf jkahfdhfadjfhafh 
+                    Helped digitize filing and scheduling systems.
                 </p>
              
                 </>
