@@ -96,6 +96,10 @@ export default function ContactForm() {
 
   return (
     <div className="contact-menu"> {/* Center the form */}
+    <div className="overlay" style={{ display: isMessageSent ? 'block' : 'none' }}>
+        <Confetti active={isMessageSent} config={confettiConfig} />
+      </div>
+    
       {!isMessageSent && (
         <form onSubmit={handleSubmit} className="form-container">
           <input
@@ -131,7 +135,6 @@ export default function ContactForm() {
       )}
       {isMessageSent && (
         <div className="success-message">
-          <Confetti active={isMessageSent} config={confettiConfig} />
           <p>SUCCESS!!!</p>
           <p>Message sent successfully!</p>
           <p>You can exit this page</p>

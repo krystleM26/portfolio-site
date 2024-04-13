@@ -59,21 +59,40 @@ button {
   cursor: pointer;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999; /* Ensure the overlay is above other elements */
+}
+
 .success-message {
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: 00000030;
+  background-color: rgba(0,0,0,0.3); 
   width: 100%; 
-  height: 12 rem;
+  min-height: 12rem;
   border-radius: 0.3rem;
   border: 0.07rem solid rgba(255, 255, 255, 0.7);
+  position: relative;
+  font-weight: bold;
 }
 
 .success-message p {
-  margin: 0.5rem;
-  padding: 3.7rem;
+  font-size: large;
+  font-weight: bold;
+  padding: 1.5rem;
+}
+.confetti-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .error-message {
