@@ -27,12 +27,12 @@ input,
   color: white;
   padding: 0.5rem;
   font-weight: bold;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-family: 'Russo One', sans-serif;
 }
 
 input {
-  height: 1.9rem;
+  height: 1.5rem;
 }
 
 ::placeholder {
@@ -49,7 +49,7 @@ input {
 
 button {
   color: white;
-  font-size: 3rem;
+  font-size: 1rem;
   font-weight: 600;
   width: 102%;
   padding: 0.5rem 0;
