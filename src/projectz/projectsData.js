@@ -7,28 +7,28 @@ const projects = {
     title: 'Spin Wheel',
     image: projectOne,
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      'A productivity app to help you decide what to do when bored',
 
-    github: 'https://github.com',
-    demo: 'https://netlify.com',
+    github: 'https://github.com/krystleM26/spin-wheel',
+    demo: 'In Progress',
   },
   2: {
-    title: 'Productivity App',
+    title: 'Digitial Planner',
     image: projectTwo,
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      'Feeling disorganized? This app will help you plan your day, week, month, and year.',
 
-    github: 'https://github.com',
-    demo: 'https://netlify.com',
+    github: 'https://github.com/krystleM26/everlastingPlans',
+    demo: 'In Progress',
   },
   3: {
-    title: 'Food Delivery App',
+    title: 'Mario Game',
     image: projectThree,
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      'Mario replica',
 
-    github: 'https://github.com',
-    demo: 'https://netlify.com',
+    github: 'https://github.com/krystleM26/mario-game',
+    demo: 'In Progress',
   },
 };
 
