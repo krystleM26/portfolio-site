@@ -7,9 +7,7 @@ const subheadingsData = {
             content: (
                 <>
                 <p>
-                    Lorem ipsum kjdsja hfjdhfkjhdjkfhdaj 
-                    fhdajkfhjdkhfjkdhfkjhdfjkhdajkfhjkdahfkjdh ajfjhfjhdfjhdj
-                     fhdjhfjkadhfjadhf ahfjdahfjkhdaf jkahfdhfadjfhafh 
+                    Full Stack Developer with a passion for creating and developing web applications.
                 </p>
              
                 </>
@@ -22,9 +20,7 @@ const subheadingsData = {
             content: (
                 <>
                 <p>
-                    Lorem ipsum kjdsja hfjdhfkjhdjkfhdaj 
-                    fhdajkfhjdkhfjkdhfkjhdfjkhdajkfhjkdahfkjdh ajfjhfjhdfjhdj
-                     fhdjhfjkadhfjadhf ahfjdahfjkhdaf jkahfdhfadjfhafh 
+                  BloomTech - Full Stack Developer
                 </p>
              
                 </>
@@ -35,9 +31,7 @@ const subheadingsData = {
             content: (
                 <>
                 <p>
-                    Lorem ipsum kjdsja hfjdhfkjhdjkfhdaj 
-                    fhdajkfhjdkhfjkdhfkjhdfjkhdajkfhjkdahfkjdh ajfjhfjhdfjhdj
-                     fhdjhfjkadhfjadhf ahfjdahfjkhdaf jkahfdhfadjfhafh 
+                    AA Journalism
                 </p>
              
                 </>
