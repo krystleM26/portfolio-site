@@ -12,10 +12,10 @@
 }
 
 .avatar.skills {
-  height: 225vh;
+  height: 220vh;
   bottom: -110vh;
-  left: -1.5rem;
   transform: translateX(0%) scaleX(-1);
+ 
 }
 
 .shadow-overlay-skills {
