@@ -4,7 +4,7 @@ import projectThree from '../assets/project-3.png';
 
 const projects = {
   1: {
-    title: 'SoMe Platform',
+    title: 'Spin Wheel',
     image: projectOne,
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
