@@ -13,7 +13,7 @@
 
 .avatar.skills {
   height: 220vh;
-  bottom: -110vh;
+  bottom: -100vh;
   transform: translateX(0%) scaleX(-1);
  
 }
@@ -33,20 +33,23 @@
 
 @media (max-width: 1100px) {
   .avatar.skills {
-    z-index: -5;
+    left: 3.2vh;
     height: 95vh;
-    bottom: -15vh;
+    bottom: 1.5vh;
+    opacity: 0.5;
   }
+ 
 }
 
-@media (max-width: 700px) {
-
-  .avatar.about {
+@media (max-width: 200px) {
+.avatar.about {
     z-index: -5;
     height: 95vh;
-    bottom: -15vh;
+    bottom: 15vh;
   }
   .avatar {
-    width: 80%;
+    width: 40%;
+    right:45%;
+   
   }
 }

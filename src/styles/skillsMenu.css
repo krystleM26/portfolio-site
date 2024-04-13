@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   top: 30%;
+  right: 15vh;
   align-items: flex-end;
 }
 
@@ -111,7 +112,7 @@ skill-sub-container-2 {
 
   .skill-sub-container-1,
   .skill-sub-container-2 {
-    gap: 0.2rem;
+    gap: 0.5rem;
   }
   .skill-sub-container {
     margin-top: 2rem;
@@ -144,8 +145,13 @@ skill-sub-container-2 {
 @media (max-width: 700px) {
   .menu {
     width: 10rem;
+    top: 50%;
+    left: 40%;
+    transform: translateY(-50%);
+  }
+  .skils-menu {
     top: 30%;
     left: 50%;
-    transform: translateY(-50%);
+  
   }
 }

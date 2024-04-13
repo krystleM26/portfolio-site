@@ -44,9 +44,7 @@ const subheadingsData = {
             content: (
                 <>
                 <p>
-                    Lorem ipsum kjdsja hfjdhfkjhdjkfhdaj 
-                    fhdajkfhjdkhfjkdhfkjhdfjkhdajkfhjkdahfkjdh ajfjhfjhdfjhdj
-                    fhdjhfjkadhfjadhf ahfjdahfjkhdaf jkahfdhfadjfhafh 
+                    Build and deploy responsive websites.
                 </p>
              
                 </>
