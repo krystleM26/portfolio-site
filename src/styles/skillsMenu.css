@@ -3,7 +3,7 @@
   position: fixed;
   display: flex;
   flex-direction: column;
-  top: 30%;
+  top: 20%;
   right: 15vh;
   align-items: flex-end;
 }
@@ -133,7 +133,7 @@ skill-sub-container-2 {
     left: 50%;
     transform: translateX(-50%);
     align-items: center;
-    top: 30%;
+  
   }
 
   .skill-item {
