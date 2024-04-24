@@ -41,11 +41,13 @@
  
 }
 
-@media (max-width: 200px) {
+@media (max-width: 700px) {
 .avatar.about {
-    z-index: -5;
-    height: 95vh;
-    bottom: 15vh;
+    z-index: -1;
+    height: 85vh;
+    bottom: 0vh;
+    width: 62%;
+    opacity: 50%;
   }
   .avatar {
     width: 40%;
