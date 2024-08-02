@@ -110,7 +110,7 @@
   height: 2rem;
   width: 71%;
   }
-  
+
   .sub-container {
     right: 1rem;
 
@@ -119,9 +119,7 @@
     font-size: 1rem;
   }
 
-  .item {
-    height: 2rem;
-  }
+  
   .title {
     font-size: 0.8rem;
     padding-right: 8.5rem;
@@ -133,7 +131,7 @@
 @media (max-width: 700px) {
   .sub-container {
     width: 15rem;
-    top: 50%;
+    margin-top: 28%;
     left: 50%;
     transform: translateX(-50%);
 
