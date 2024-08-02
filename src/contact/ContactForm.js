@@ -95,7 +95,10 @@ export default function ContactForm() {
   };
 
   return (
+
     <div className="contact-menu"> {/* Center the form */}
+    <h3>Work With Me!</h3>
+
     <div className="overlay" style={{ display: isMessageSent ? 'block' : 'none' }}>
         <Confetti active={isMessageSent} config={confettiConfig} />
       </div>
