@@ -10,7 +10,7 @@ export default (function PlayerStats() {
             <span id="playerStats_lines_thin"></span>
            
         </div>
-        <h2>Fullstack Developer</h2>
+        <h3>Fullstack Developer</h3>
 
 
       
