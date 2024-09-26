@@ -2,9 +2,9 @@
   position: fixed;
   display: flex;
   align-items: flex-start;
-  top: 3rem;
+  
   gap: 1.5625rem;
-  left: 50%;
+  margin: 10% 0 0 43%;
 }
 
 .nav-about {
@@ -67,6 +67,15 @@ a {
     width: 2rem;
   }
 }
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
 
 @media (max-width: 1100px) {
   .nav-link {
@@ -86,4 +95,7 @@ a {
     width: 3.5rem
   }
   
+}
+@media (max-width: 375px) {
+  margin: 5%;
 }
