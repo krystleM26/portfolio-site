@@ -93,12 +93,12 @@
   font-size: 1.2rem;
   overflow-wrap: break-word; /* Allow long words to break */
   word-wrap: break-word; /* For compatibility with older browsers */
-  max-height: 300px; /* Optional: set a max height for control */
+  max-height: 550px;
   overflow-y: auto; /* Enable vertical scrolling if content exceeds max height */
   margin: 10px 0; /* Margin around the paragraph for spacing */
-  color:rgb(194, 181, 39);
+  color:rgb(214, 98, 40);
   font-weight:bolder;
-  background-color: rgba(42, 178, 212, 0.4);
+  background-color: rgba(84, 3, 81, 0.5);
   padding: 10px;
   border-radius: 5px;
 }
@@ -159,7 +159,6 @@
   }
   .sub-container {
     width: 15rem;
-    margin-top: 28%;
     left: 50%;
     transform: translateX(-50%);
 
