@@ -96,6 +96,11 @@
   max-height: 300px; /* Optional: set a max height for control */
   overflow-y: auto; /* Enable vertical scrolling if content exceeds max height */
   margin: 10px 0; /* Margin around the paragraph for spacing */
+  color:rgb(194, 181, 39);
+  font-weight:bolder;
+  background-color: rgba(42, 178, 212, 0.4);
+  padding: 10px;
+  border-radius: 5px;
 }
 
 
