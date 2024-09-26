@@ -88,7 +88,7 @@
 
 .p-container {
   display: block; /* Change to block to make the content visible */
-  font-family: 'Space Grotesk', sans-serif;
+  /* font-family: 'Space Grotesk', sans-serif; */
   white-space: pre-wrap; /* Preserve whitespace and allow text to wrap */
   font-size: 1.2rem;
   overflow-wrap: break-word; /* Allow long words to break */
@@ -96,7 +96,7 @@
   max-height: 550px;
   overflow-y: auto; /* Enable vertical scrolling if content exceeds max height */
   margin: 10px 0; /* Margin around the paragraph for spacing */
-  color:rgb(214, 98, 40);
+  color:white;
   font-weight:bolder;
   background-color: rgba(84, 3, 81, 0.5);
   padding: 10px;

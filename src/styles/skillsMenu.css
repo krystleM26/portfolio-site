@@ -159,10 +159,16 @@ skill-sub-container-2 {
     top: 21%;
     left: 30%;
     transform: translateY(-50%, 0);
+    gap: 20px;
+  }
+
+  .menu-item {
+   margin: 0 10px;
   }
   .skils-menu {
     top: 30%;
     left: 50%;
   
   }
+  
 }

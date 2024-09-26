@@ -6,6 +6,8 @@ body {
   font-family: 'Space Grotesk', sans-serif;
   color: white;
   -webkit-tap-highlight-color: transparent;
+  overflow: hidden;
+  height: 100%;
 }
 
 :root {

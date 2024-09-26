@@ -34,14 +34,13 @@ const AboutSubheading = ({ title, content, active, onClick, menuItem }) => {
         } else {
           setIsTyping(false)
         }
+      };
+      if(typedContent === '') {
+        type()
       }
-      setTypedContent('');
-      type();
-    } else if (!active) {
-      setTypedContent('');
-      setIsTyping(false);
     }
-  }, [active, content, isTyping])
+  }, [active, content, isTyping, typedContent]);
+     
 
     return (
       <div className={classNames(subContainerClass, { "active-subheading": active })} >
