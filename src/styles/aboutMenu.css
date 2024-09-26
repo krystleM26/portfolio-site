@@ -33,6 +33,17 @@
     top: 32%;
     right: 10vw;
     cursor: pointer;
+    max-height: 300px;
+    overflow-y: auto;
+    padding-right: 10px;
+  }
+  .sub-container li {
+ 
+      list-style-type: circle; /* Default bullet points (you can also use circle, square, etc.) */
+      padding: 0.5rem 0;     /* Adds vertical padding between each item */
+      margin-left: 1.5rem;   /* Adjust the indent of list items */
+      font-size: 1rem;       /* Set the font size */
+ 
   }
 
   .active-subheading {
@@ -76,8 +87,17 @@
   }
 
 .p-container {
-  display: none;
+  display: block; /* Change to block to make the content visible */
+  font-family: 'Space Grotesk', sans-serif;
+  white-space: pre-wrap; /* Preserve whitespace and allow text to wrap */
+  font-size: 1.2rem;
+  overflow-wrap: break-word; /* Allow long words to break */
+  word-wrap: break-word; /* For compatibility with older browsers */
+  max-height: 300px; /* Optional: set a max height for control */
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds max height */
+  margin: 10px 0; /* Margin around the paragraph for spacing */
 }
+
 
 .active-subheading .p-container {
   display: block;
