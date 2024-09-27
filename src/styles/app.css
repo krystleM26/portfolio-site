@@ -6,8 +6,8 @@ body {
   font-family: 'Space Grotesk', sans-serif;
   color: white;
   -webkit-tap-highlight-color: transparent;
-  overflow: hidden;
-  height: 100%;
+  overflow: auto;
+  height: auto;
 }
 
 :root {
@@ -33,4 +33,17 @@ button:hover,
     50%,
     #ffffff00
   );
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+main-content {
+  min-height: calc(100vh- 100px);
+  padding-bottom:  100px;
 }
