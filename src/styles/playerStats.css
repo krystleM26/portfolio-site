@@ -42,7 +42,7 @@ h3 {
   width: 6.2rem;
 }
 
-@max-width (max-width:1100px) {
+@media (max-width:1100px) {
   #playerStats {
     left: 50%;
     transform: translateX(-50%);
@@ -54,9 +54,17 @@ h3 {
     font-size: 0.8rem;
   }
 
-  h2,
+  
   h3,
   p {
     font-size: 0.7rem;
+  }
+
+}
+
+@media (max-width: 700px){
+  #playerStats {
+    flex-direction: row;
+    align-items: center;
   }
 }

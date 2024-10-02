@@ -1,6 +1,6 @@
 h2 {
   text-align: center;
-  font-size:  41px;
+  font-size:  30px;
   
 }
 
@@ -48,7 +48,7 @@ input {
 }
 
 #message {
-  height: 6.2rem;
+  height: 6rem;
   resize: none;
 
 }
@@ -125,9 +125,16 @@ label {
   }
 
   input, #message {
-    width:92% 
+    width:92%;
+    font-size: 1rem;
   }
   .success-message p {
     padding: 0 0.5rem;
+  }
+}
+
+@media ( max-width: 300px) {
+  h2 {
+    font-size: 21px;
   }
 }
