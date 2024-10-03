@@ -64,6 +64,13 @@ a {
   .page-title {
     width: 2rem;
   }
+
+  @media (max-width: 775px) {
+    .nav {
+     padding: 5%;
+    }
+
+  }
 }
  
 
