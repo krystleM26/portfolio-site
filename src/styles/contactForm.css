@@ -1,6 +1,6 @@
 h2 {
   text-align: center;
-  font-size:  30px;
+  font-size:  22px;
   
 }
 
@@ -28,7 +28,7 @@ input,
   width: 100%;
   background-color: #00000040;
   border-radius: 0.3rem;
-  border: 0.07rem solid rgba(255, 255, 255, 0.4);
+ 
   outline: none;
   color: white;
   padding: 0.5rem;
@@ -60,7 +60,6 @@ button {
   width: 102%;
   padding: 0.5rem 0;
   background-color: transparent;
-  border: none;
   font-family: 'Russo One', sans-serif;
   cursor: pointer;
 }
@@ -113,7 +112,7 @@ label {
   display: none;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 775px) {
   .contact-menu {
     position: absolute;
     top: 48%;
