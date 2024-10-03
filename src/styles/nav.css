@@ -1,10 +1,8 @@
 .nav {
   position: fixed;
   display: flex;
- 
-  
   gap: 1.5625rem;
-  margin:0% 5% 5% 50%;
+  margin: 4% 15% 15% 50%;
 }
 
 .nav-about {
@@ -54,7 +52,7 @@ a {
     transform: translateX(0);
   }
   .nav {
-    top: calc(37vh - 8rem);
+    top: 70%;
     transform: translateX(-50%);
   }
   .nav-link {
@@ -77,34 +75,6 @@ footer {
   text-align: center;
 }
 
-@media (max-width: 1100px) {
-  .nav {
-    top: calc(106vh - 8rem);
-    transform: translateX(-50%);
-  }
-  .nav-link {
-    width: 80%;
-  }
-  .nav-link img {
-    width: 3.5rem
-  }
-  
-  
-}
 
-@media (max-width: 900px) {
 
-  .nav {
-    
-    transform: translateX(-50%);
-  }
 
-  .nav-link {
-    width: 80%;
-  }
-  .nav-link img {
-    width: 3.5rem
-  }
-  
-
-}
