@@ -1,55 +1,46 @@
 #playerStats {
-  width: 15rem;
+  width: 100%;
   height: 4rem;
   position: fixed;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
+  align-items: center;
   top: 3rem;
   left: 3rem;
+  margin: 10px;
 }
 
 h1 {
   margin: 0;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
-h3 {
-  margin: 0;
-  font-size: 1rem;
-  bottom: 8px;
-}
 
-#playerStats_lines {
+
+#playerStats_separator {
   display: flex;
+  justify-content: center;
   align-items: center;
+  margin: 10px;
+
 }
 
-#playerStats_lines_thick {
-  display: block;
-  top: 0;
-  left: 0;
-  background-color: white;
-  height: 0.2rem;
-  width: 8.75rem;
+.separator {
+  font-size: 1.5rem;
+  color: white;
+  padding: 0 10px;
 }
 
-#playerStats_lines_thick {
-  display: block;
-  top: 0;
-  left: 0;
-  background-color: lightgray;
-  height: 0.1rem;
-  width: 6.2rem;
-}
 
 @media (max-width:1100px) {
   #playerStats {
     left: 50%;
     transform: translateX(-50%);
-    width: 8rem;
-    height: 2.5rem;
+    /* width: 8rem; */
+    height: .5rem;
     top: 2rem;
+    
   }
   h1 {
     font-size: 0.8rem;
