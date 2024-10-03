@@ -28,7 +28,8 @@
 }
 
 .project-item.activeProject .title {
-  font-size: 1.5rem;
+  font-size: 1rem;
+  margin-bottom: 20px;
 }
 
 .activeProject {
@@ -37,7 +38,7 @@
 }
 
 .project-item.activeProject:nth-child(1) {
-  background: linear-gradient(270deg, #ffffff00, var(--purple) 70%);
+  background: linear-gradient(270deg, #ffffff00, var(--purple) 100%);
 }
 .project-item.activeProject:nth-child(2) {
   background: linear-gradient(270deg, #ffffff00, var(--blue) 70%);
@@ -84,19 +85,18 @@
 @media (max-width: 1100px) {
   .project-menu {
     width: 28rem;
-    top: 20%;
+    top: 14%;
     transform: translateX(-50%);
   }
   .project-item {
-    height: 2rem;
     width: 100%;
   }
   .project-item.activeProject .title {
     font-size: 1rem;
   }
-  .title {
+  /* .title {
     font-size: 0.8rem;
-  }
+  } */
 }
 @media (max-width: 700px) {
   .project-menu {
@@ -116,7 +116,7 @@
     width: 12rem;
   }
   .link-container a {
-    margin-top: 0.5rem;
+   
     width: 50%;
     height: 2rem;
   }
