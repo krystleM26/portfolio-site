@@ -13,12 +13,11 @@ const projects = {
     demo: 'In Progress',
   },
   2: {
-    title: 'Digitial Planner',
+    title: 'Coding Challenges',
     image: projectTwo,
     description:
-      'Feeling disorganized? This app will help you plan your day, week, month, and year.',
-
-    github: 'https://github.com/krystleM26/everlastingPlans',
+      'Here are some coding challenges I am working on',
+    github: 'https://github.com/krystleM26/coding-challenges',
     demo: 'In Progress',
   },
   3: {

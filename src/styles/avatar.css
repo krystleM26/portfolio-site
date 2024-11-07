@@ -1,20 +1,18 @@
 .avatar {
-  position: fixed;
+  display:flex;
+  margin-left: auto;
   overflow: hidden;
   z-index: -2;
+  width: 54%;
+  
+
 }
 
-.avatar.about {
-  height: 89vh;
-  bottom: -8vh;
-  left: 50%;
-  transform: translateX(-50%);
-}
 
 .avatar.skills {
-  height: 220vh;
+  height: 68vh;
   bottom: -100vh;
-  transform: translateX(0%) scaleX(-1);
+  
  
 }
 
@@ -32,26 +30,23 @@
 }
 
 @media (max-width: 1100px) {
+  .avatar.about {
+    border-radius: 23%;
+  }
   .avatar.skills {
-    left: 3.2vh;
-    height: 95vh;
-    bottom: 1.5vh;
-    opacity: 0.5;
+    border-radius: 69px 50px 30px 66px;
   }
  
 }
 
 @media (max-width: 700px) {
 .avatar.about {
-    z-index: -1;
-    height: 85vh;
-    bottom: 0vh;
-    width: 62%;
-    opacity: 50%;
+    border-radius: 50%;
+  
   }
   .avatar {
     width: 40%;
-    right:45%;
+   
    
   }
 }

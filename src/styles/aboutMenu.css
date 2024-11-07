@@ -7,9 +7,11 @@
   transform: translateY(-60%);
   left: 10vw;
 }
+p {
+  font-size: 30px;
+}
 
 .item {
-  height: 3.7rem;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -17,33 +19,25 @@
   }
 
   .title {
-    font-size: 1rem;
+    
     padding-right: 2.5rem;
   }
-
-  .item.active  .title {
-    font-size: 1rem;
-  }
-
   .sub-container {
-    width: 18.5rem;
-    position: fixed;
     display: flex;
     flex-direction: column;
-    top: 32%;
-    right: 10vw;
+    margin-left: 35%;
+    transform: translateY(-55%); /* Adjusts position upward */
     cursor: pointer;
-    max-height: 300px;
+    max-height: 56%;
     overflow-y: auto;
     padding-right: 10px;
   }
+
   .sub-container li {
- 
       list-style-type: circle; /* Default bullet points (you can also use circle, square, etc.) */
       padding: 0.5rem 0;     /* Adds vertical padding between each item */
       margin-left: 1.5rem;   /* Adjust the indent of list items */
       font-size: 1rem;       /* Set the font size */
- 
   }
 
   .active-subheading {
@@ -63,27 +57,28 @@
     border-radius: var(--radius-right);
   }
 
-  
-
   .sub-container-1.active-subheading h3,
   .sub-container-1.active-subheading h3,
   .sub-container-1.active-subheading h3 {
     border-radius: var(--radius);
   }
 
-  .sub-container-1.active-subheading h3 {
+.sub-container-1.active-subheading h3 {
     background: linear-gradient(90deg, var(--purple), var(--transparent) 100%);
   }
-  .sub-container-2.active-subheading h3 {
+.sub-container-2.active-subheading h3 {
     background: linear-gradient(90deg, var(--blue), var(--transparent) 100%);
   }
-  .sub-container-3.active-subheading h3 {
+.sub-container-3.active-subheading h3 {
     background: linear-gradient(90deg, var(--cyan), var(--transparent) 100%);
   }
 
-  .item.active {
+.item.active {
     position: relative;
     cursor: default;
+  }
+  h3 {
+    font-size: 50px;
   }
 
 .p-container {
@@ -110,7 +105,7 @@
 
 }
 
-.icon-title-container {
+ .icon-title-container {
   display: flex;
   gap: 1.2rem;
   margin-bottom: 0.5rem;
@@ -128,6 +123,7 @@
   position: relative;
   margin: 0.2rem 0;
   padding: 0.5rem 0 0.5rem 1rem;
+  font-size: 50px;
 }
 
 @media (max-width: 1100px) {
@@ -136,16 +132,16 @@
   width: 71%;
   }
 
-  .sub-container {
+.sub-container {
     right: 1rem;
 
   }
-  .item.active.title {
+.item.active.title {
     font-size: 1rem;
   }
 
   
-  .title {
+.title {
     font-size: 0.8rem;
     padding-right: 8.5rem;
   }

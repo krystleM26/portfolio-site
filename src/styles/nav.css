@@ -1,12 +1,25 @@
 .nav {
-  position: fixed;
-  display: flex;
- 
-  
+  display: flex; 
   gap: 1.5625rem;
   margin:0% 5% 5% 50%;
 }
 
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  line-height: 7rem;
+}
+
+.nav-links a {
+  font-size: 1.25rem; /* Increased font size */
+  padding: 0.75rem 1rem; /* More padding around the text */
+  line-height: 1.5; /* Optional line height for better spacing */
+  color: white; /* Text color */
+  text-decoration: none; /* Remove underline */
+  font-family: 'Russo One', sans-serif; /* Font family */
+}
 .nav-about {
   transform: translateX(-1.56rem);
 }
@@ -30,9 +43,9 @@ a {
 }
 
 .page-title {
-  font-size: 0.875rem;
-  color: white;
-  cursor: default;
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 
 .nav-link {
@@ -46,6 +59,15 @@ a {
   opacity: 1;
 }
 
+.menu-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  padding: 0.5rem;
+  margin-left: auto;
+}
+
 @media (max-width: 1100px) {
   .nav-about,
   .nav-skills,
@@ -53,9 +75,13 @@ a {
   .nav-contact {
     transform: translateX(0);
   }
+
+  .menu-toggle {
+    font-size: 2rem; /* Increase size on medium screens */
+}
   .nav {
-    top: calc(37vh - 8rem);
-    transform: translateX(-50%);
+    top: auto;
+    left: 10%;
   }
   .nav-link {
     width: 2rem;
