@@ -173,7 +173,7 @@ skill-sub-container-2 {
     align-items: center; /* Centers the content vertically */
     position: fixed; /* Makes the avatar position fixed */
     top: 50%; /* Centers the avatar vertically */
-    right: 16; /* Positions the avatar to the right */
+    right: 16%; /* Positions the avatar to the right */
     transform: translateY(-50%); /* Centers vertically based on the element's height */
     margin: 0; /* Removes any extra margin */
     z-index: 1000; /* Keeps it on top of other content */
