@@ -1,11 +1,11 @@
 #playerStats {
   width: 15rem;
   height: 4rem;
-  position: fixed;
+  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  top: 3rem;
+  top: 15px;
   
 }
 

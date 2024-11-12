@@ -144,16 +144,15 @@ skill-sub-container-2 {
 @media (max-width: 700px) {
   .avatar.about {
     z-index: -1;
-    height: 40vh;
-    bottom: 0vh;
+   
     width: 62%;
     opacity: 50%;
-    left: 61%;
+    
   }
   .menu {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+   
     position: absolute;
     top: 23%;
     left: 21%;

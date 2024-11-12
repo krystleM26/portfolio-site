@@ -76,9 +76,9 @@ export default function Nav() {
       <button onClick={toggleMenu} className='menu-toggle'>
         {menuOpen ? "✖" : "☰"}
       </button>
-      {menuOpen && ( // Conditionally render the navigation)}
+     
        
-       <div className='nav-links'>
+       <div className={`nav-links ${menuOpen ? 'active' : ''}`}>
 
          {renderNavLink(
               "/",
@@ -111,7 +111,7 @@ export default function Nav() {
               "nav-blog"
           )}
        </div>
-      )}
+      
     </nav>
  )
   

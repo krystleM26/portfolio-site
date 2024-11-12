@@ -1,9 +1,11 @@
 .avatar {
   display:flex;
-  margin-left: auto;
+  margin:20%;
   overflow: hidden;
   z-index: -2;
   width: 54%;
+  bottom: 5%;
+  top:5%;
   
 
 }
