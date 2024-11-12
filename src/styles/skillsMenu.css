@@ -123,7 +123,6 @@ skill-sub-container-2 {
   }
 
   h2,
-  h3,
   p {
     font-size: 0.7rem;
   }
@@ -145,7 +144,7 @@ skill-sub-container-2 {
 @media (max-width: 700px) {
   .avatar.about {
     z-index: -1;
-    height: 85vh;
+    height: 40vh;
     bottom: 0vh;
     width: 62%;
     opacity: 50%;

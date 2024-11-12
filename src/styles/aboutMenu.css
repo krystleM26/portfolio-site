@@ -77,9 +77,7 @@ p {
     position: relative;
     cursor: default;
   }
-  h3 {
-    font-size: 50px;
-  }
+ 
 
 .p-container {
   display: block; /* Change to block to make the content visible */
@@ -150,6 +148,10 @@ p {
 
 
 @media (max-width: 700px) {
+ .sub-container-1.active-subheading h3 {
+    font-size: 25px;
+  }
+  
   .button {
     width: 80%;
   }
@@ -166,9 +168,7 @@ p {
 
   }
 
-  .active-subheading {
-    font-size: 0.8rem;
-  }
+ 
 
   .icon-title-container.active-subheading,
   icon {
@@ -177,7 +177,7 @@ p {
   h1 {
     font-size:  0.8rem;
   }
-  h2,h3,p {
+  h2,p {
     font-size: 0.8rem;
   }
 }
