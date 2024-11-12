@@ -129,9 +129,8 @@ skill-sub-container-2 {
 
   .skill-menu {
     flex-direction: column;
-    left: 50%;
     transform: translateX(-50%);
-    align-items: center;
+  
   
   }
 
@@ -144,9 +143,8 @@ skill-sub-container-2 {
 @media (max-width: 700px) {
   .avatar.about {
     z-index: -1;
-   
     width: 62%;
-    opacity: 50%;
+    opacity: 75%;
     
   }
   .menu {
@@ -168,5 +166,18 @@ skill-sub-container-2 {
     left: 50%;
   
   }
+
+  .avatar.skills {
+    display: flex;
+    justify-content: left;
+    align-items: center; /* Centers the content vertically */
+    position: fixed; /* Makes the avatar position fixed */
+    top: 50%; /* Centers the avatar vertically */
+    right: 16; /* Positions the avatar to the right */
+    transform: translateY(-50%); /* Centers vertically based on the element's height */
+    margin: 0; /* Removes any extra margin */
+    z-index: 1000; /* Keeps it on top of other content */
+}
+
   
 }

@@ -23,7 +23,7 @@
   .sub-container {
     display: flex;
     flex-direction: column;
-    margin-left: 35%;
+    margin-left: 30%;
     transform: translateY(-70%); /* Adjusts position upward */
     cursor: pointer;
     max-height: 56%;
@@ -68,7 +68,7 @@
     word-wrap: break-word;
     max-height: 550px;
     overflow-y: auto;
-    margin: 10px 0;
+   
     color: white;
     font-weight: bolder;
     background-color: rgba(84, 3, 81, 0.5);
@@ -86,7 +86,6 @@
     display: flex;
     gap: 1.2rem;
     margin-bottom: 1rem;
-    position: fixed;
     z-index: 1000;
     cursor: default;
   }
@@ -127,7 +126,7 @@
 
 .sub-container {
   width: 60%; /* Wider content for medium screens */
-  margin-left: 55%; /* Closer to the avatar on medium screens */
+  margin-left: 40%; /* Closer to the avatar on medium screens */
   transform: translateY(-50%); /* Slightly adjust to raise it */
 
 
