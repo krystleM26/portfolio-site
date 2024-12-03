@@ -24,7 +24,7 @@ const AboutSubheading = ({ title, content, active, onClick, menuItem }) => {
     if(active && !isTyping && typeof content === 'string') {
       setIsTyping(true);
       let index = 0;
-      const speed = 35;
+      const speed = 15;
 
       const type = () => {
         if(index < content.length) {
