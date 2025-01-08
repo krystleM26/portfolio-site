@@ -155,7 +155,7 @@ skill-sub-container-2 {
     top: 23%;
     left: 21%;
     transform: translateY(-50%, 0);
-    gap: 20px;
+    /* gap: 20px; */
   }
 
   .menu-item {
