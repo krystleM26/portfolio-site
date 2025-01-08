@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Avatar from '../avatar/Avatar.js'
 import SkillsMenu from "./SkillsMenu"
 
 export default class Skills extends Component {
@@ -7,7 +6,6 @@ export default class Skills extends Component {
     return (
       <>
       
-      <Avatar page="skills" />
       <SkillsMenu />
       
       </>

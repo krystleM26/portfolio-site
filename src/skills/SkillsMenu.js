@@ -4,6 +4,7 @@ import '../styles/skillsMenu.css';
 import skills from './skillsData.js';
 import frontendIcon from '../assets/eagle-emblem.png';
 import backendIcon from '../assets/hawk-emblem.png';
+import Avatar from '../avatar/Avatar.js';
 
 
 export default class SkillsMenu extends Component {
@@ -49,6 +50,8 @@ export default class SkillsMenu extends Component {
     console.log(curIcon, 'curIcon')
 
     return (
+      <div className='body-container' >
+        <Avatar page="skills"   />
       <div className="skill-menu">
         {menuItems.map((item, index) => (
           <div
@@ -65,6 +68,7 @@ export default class SkillsMenu extends Component {
         <div className="skill-sub-container">
           {this.renderContent(skills[activeMenuItem])}
         </div>
+      </div>
       </div>
     );
   }

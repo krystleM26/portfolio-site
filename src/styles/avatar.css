@@ -1,21 +1,24 @@
 .avatar {
-  position: fixed;
+  /* position: fixed; */
   overflow: hidden;
   z-index: -2;
 }
 
 .avatar.about {
-  height: 89vh;
-  bottom: -8vh;
-  left: 13%;
-  transform: translateX(-50%);
+  /* height: 89vh; Make it smaller for better screen fit */
+  /* bottom: -8vh; */
+  /* left: 13%; */
+  /* transform: translateX(-50%); */
+  border-radius: 50%;
+  width: 200px;
 }
 
 .avatar.skills {
-  height: 220vh;
-  bottom: -100vh;
+  /* height: 220vh; */
+  /* bottom: -100vh; */
+  border-radius: 50%;
+  width: 200px;
   transform: translateX(0%) scaleX(-1);
- 
 }
 
 .shadow-overlay-skills {
@@ -27,31 +30,44 @@
     90deg,
     rgba(0, 0, 0, 0.25) rgba(255, 255, 255, 0)
   );
-
   z-index: -1;
 }
 
 @media (max-width: 1100px) {
   .avatar.skills {
-    width: 71%;
-    height: 105vh;
-    bottom: -5.5vh;
-    opacity: 0.5;
+    /* width: 71%; */
+    /* height: 105vh; 
+    bottom: -5.5vh; */
+    opacity: 0.5; 
   }
- 
 }
 
 @media (max-width: 775px) {
-.avatar.about {
+  .avatar.about {
     z-index: -1;
-    height: 85vh;
-    bottom: 0vh;
-    width: 62%;
-    opacity: 50%;
+    /* height: 85vh;  */
+    /* bottom: 0vh; */
+    /* width: 62%;  */
+    opacity: 50%; 
   }
+
   .avatar {
-    width: 40%;
-    right:45%;
-   
+    /* width: 40%; 
+    right: 45%;  */
+  }
+}
+
+@media (max-width: 500px) {
+  .avatar.about {
+    height: 70vh; /* Make it even smaller on smaller devices */
+    width: 55%; /* Adjust width to better fit smaller screens */
+    bottom: 5vh; /* Adjust bottom margin to avoid clipping */
+    opacity: 40%; /* Further reduce opacity for a subtle effect */
+  }
+  
+  .avatar.skills {
+    width: 60%; /* Scale down on smaller screens */
+    height: 120vh; /* Reduce size for better fit */
+    bottom: -10vh; /* Slightly adjust the bottom position */
   }
 }

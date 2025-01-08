@@ -7,7 +7,6 @@ import Project from './projectz/Projects';
 import Contact from './contact/Contact';
 import './styles/app.css';
 import Background from './background/Background';
-import PlayerStats from './playerStats/PlayerStats';
 import Blog from './blog/Blog';
 
 const App = () => {
@@ -22,7 +21,6 @@ const App = () => {
         <Route path="/contact" element={<Contact />} /> 
         <Route path="/blog" element={<Blog />} />
       </Routes>
-      <PlayerStats />
     </Router>
   );
 };

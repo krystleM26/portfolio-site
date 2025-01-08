@@ -6,6 +6,7 @@ import stack from '../assets/stack.png'
 import envelope from '../assets/envelope.png'
 import blog from '../assets/blog.png'
 import "../styles/nav.css"
+import PlayerStats from '../playerStats/PlayerStats'
 
 export default function Nav() {
     const location = useLocation();
@@ -67,7 +68,9 @@ export default function Nav() {
  }
 
  return (
-    <nav className={`nav $(navPositionClass)`}>
+    <div className='header'>
+      <PlayerStats />
+      <nav className={`nav $(navPositionClass)`}>
         {renderNavLink(
             "/",
             astronautHelmet,
@@ -98,7 +101,8 @@ export default function Nav() {
             "blog icon",
             "nav-blog"
         )}
-    </nav>
+      </nav>
+    </div>
  )
   
 }

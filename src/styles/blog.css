@@ -17,12 +17,19 @@
   }
   
   .post {
-    border: 1px solid black;
     padding: 20px;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
+    align-items: center;
+    background-color: #fff;
+  }
+
+  .post-content .medium-feed-image {
+    width: 100%;
+    height: 125px;
+    overflow: hidden;
   }
   
   .post img {
@@ -36,21 +43,35 @@
   .post h2 {
     margin: 0;
     color: #0073e6;
-    background: grey;
+    font-size:15px;
+    text-wrap: wrap;
+    /* background: grey; */
   }
   
   .post p {
     margin: 5px 0;
     line-height: 1.6;
-    background: grey;
+    color:red;
+    /* background: grey; */
   }
   
   .post a {
     text-decoration: none;
     color: inherit;
-    background: grey;
+    width: 100%;
+    color:red;
+    /* background: grey; */
   }
   
   /* Media queries for responsiveness */
-  @media (max
+@media (max-width: 1024px) {
+    .posts-list {
+      grid-template-columns: repeat(2, 1fr); /* Two posts per row */
+    }
+  }
   
+  @media (max-width: 768px) {
+    .posts-list {
+      grid-template-columns: 1fr; /* One post per row */
+    }
+  }

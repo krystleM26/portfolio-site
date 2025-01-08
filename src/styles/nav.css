@@ -1,8 +1,12 @@
 .nav {
-  position: fixed;
+  /* position: fixed; */
+  position: relative;
   display: flex;
   gap: 1.5625rem;
-  margin: 4% 15% 15% 50%;
+  /* margin: 4% 15% 15% 50%; */
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .nav-about {
@@ -52,8 +56,8 @@ a {
     transform: translateX(0);
   }
   .nav {
-    top: 80%;
-    transform: translateX(-50%);
+    /* top: 80%;
+    transform: translateX(-50%); */
   }
   .nav-link {
     width: 2rem;
@@ -67,9 +71,15 @@ a {
 
   @media (max-width: 775px) {
     .nav {
-     padding: 5%;
+     /* padding: 5%; */
     }
 
+  }
+}
+
+@media (max-width: 767px) {
+  .nav-link img {
+    width: 2rem;
   }
 }
  
