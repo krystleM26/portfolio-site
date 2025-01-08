@@ -23,8 +23,9 @@
     flex-direction: column;
     box-sizing: border-box;
     align-items: center;
-    background-color: #fff;
-  }
+    background:linear-gradient(90deg, var(--transparent), var(--purple) 100%);
+};
+  
 
   .post-content .medium-feed-image {
     width: 100%;
@@ -38,6 +39,7 @@
     border-radius: 8px;
     margin-bottom: 10px;
     object-fit: cover;
+    max-height: 125px;;
   }
   
   .post h2 {
@@ -51,7 +53,7 @@
   .post p {
     margin: 5px 0;
     line-height: 1.6;
-    color:red;
+    color: seashell;
     /* background: grey; */
   }
   
@@ -59,7 +61,7 @@
     text-decoration: none;
     color: inherit;
     width: 100%;
-    color:red;
+    color:seashell;
     /* background: grey; */
   }
   
