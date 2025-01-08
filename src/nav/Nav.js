@@ -4,6 +4,7 @@ import astronautHelmet from '../assets/astronaut-helmet.png'
 import deadEye from '../assets/dead-eye.png'
 import stack from '../assets/stack.png'
 import envelope from '../assets/envelope.png'
+import blog from '../assets/blog.png'
 import "../styles/nav.css"
 
 export default function Nav() {
@@ -19,6 +20,8 @@ export default function Nav() {
               return "nav-projects";
             case "/contact":
               return "nav-contact";
+            case "/blog":
+              return "nav-blog"
             default:
               return "";
         }
@@ -33,6 +36,8 @@ export default function Nav() {
               return "PROJECTS";
             case "/contact":
               return "CONTACT";
+            case "/blog":
+              return "BLOG"
             default:
               return "";
         }
@@ -86,6 +91,12 @@ export default function Nav() {
             envelope,
             "envelope icon",
             "nav-contact"
+        )}
+        {renderNavLink(
+            "/blog",
+            blog,
+            "blog icon",
+            "nav-blog"
         )}
     </nav>
  )
