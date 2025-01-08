@@ -2,8 +2,6 @@ import React, {useEffect, useState} from 'react'
 import '../styles/blog.css';
 
 
-
-
 const Blog = () => {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);

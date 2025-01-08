@@ -4,7 +4,7 @@ import astronautHelmet from '../assets/astronaut-helmet.png'
 import deadEye from '../assets/dead-eye.png'
 import stack from '../assets/stack.png'
 import envelope from '../assets/envelope.png'
-import blog from '../assets/blog.png'
+import blog from '../assets/blog emblem.png'
 import "../styles/nav.css"
 import PlayerStats from '../playerStats/PlayerStats'
 
