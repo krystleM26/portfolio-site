@@ -1,6 +1,50 @@
-h1 {
- display: flex;
- align-items: center;
- font-size: large;
- 
-}
+.blog-container {
+    padding: 20px;
+    max-width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    box-sizing: border-box;
+  }
+  
+  .blog-container h1 {
+    text-align: center;
+  }
+  
+  .posts-list {
+    font: seashell;
+    display: grid; /* Use grid for layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive 3-column grid */
+    gap: 5%; /* Space between posts */
+    justify-content: center; /* Center the grid if not full width */
+    margin: 5%;
+   
+  }
+  
+  .post {
+    background-color: #006666;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+  
+  .post img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    object-fit: cover;
+  }
+  
+  .post h2 {
+    margin: 0;
+    font-size: 20px;
+    color:seashell;
+  }  
+
+  .post p {
+    font-size: 1rem;
+    color:seashell;
+
+  }

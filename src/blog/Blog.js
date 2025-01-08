@@ -9,13 +9,22 @@ const Blog = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetchMediumPosts = async () => {
+   async function fetchMediumPosts() {
       try {
         const response = await fetch(
           `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/green-code`
         )
         const data = await response.json();
-        setPosts(data.items);
+
+        const updatedPosts = data.items.map(post => {
+          const imgMatch = post.description.match(/<img.*?src="(.*?)"/);
+          return {
+            ...post,
+            image: imgMatch ? imgMatch[1] : null,
+          };
+        });
+
+        setPosts(updatedPosts);
       } catch (error) {
         console.error('Error fetching Medium posts:', error);
       } finally {
@@ -28,7 +37,7 @@ const Blog = () => {
 
   return (
     <div className='blog-container'>
-        <h1>My Blog</h1>
+        <h1> The Balanced Dev</h1>
         {
           loading ? (
             <p>Loading Posts...</p>
@@ -40,8 +49,11 @@ const Blog = () => {
                   <a href={post.link} target='_blank' rel="noopener noreferrer">
                     <h2>{post.title}</h2>
                   </a>
-                  <p>{post.pubDate}</p>
-                  <p>{post.description}</p>
+                  <div
+                  dangerouslySetInnerHTML={{ __html: post.description }}
+                  className="post-content"></div>
+                  <p>Published on: {post.pubDate}</p>
+                  
                 </div>
               ))}
         </div>
