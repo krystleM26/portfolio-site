@@ -23,7 +23,7 @@
     flex-direction: column;
     box-sizing: border-box;
     align-items: center;
-    background:linear-gradient(90deg, var(--transparent), var(--purple) 100%);
+    background:linear-gradient(10deg, var(--transparent), var(--purple) 50%);
 };
   
 
@@ -44,7 +44,7 @@
   
   .post h2 {
     margin: 0;
-    color: #0073e6;
+    color: whitesmoke;
     font-size:15px;
     text-wrap: wrap;
     /* background: grey; */

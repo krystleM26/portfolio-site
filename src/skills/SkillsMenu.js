@@ -52,16 +52,17 @@ export default class SkillsMenu extends Component {
     return (
       <div className='body-container' >
         <Avatar page="skills"   />
-      <div className="skill-menu">
+        <div className="skill-menu">
         {menuItems.map((item, index) => (
-          <div
+          <div 
             key={index}
             className={classNames('skill-item', {
               activeSkill: activeMenuItem === index + 1,
             })}
             onClick={() => this.handleMenuItemClick(index + 1)}
           >
-            <h2 className="skill-title">{item}</h2>
+           
+              <h2>{item}</h2>
           </div>
         ))}
         <img className="skill-icon" src={curIcon} alt="current skill" />
@@ -69,7 +70,7 @@ export default class SkillsMenu extends Component {
           {this.renderContent(skills[activeMenuItem])}
         </div>
       </div>
-      </div>
+    </div>
     );
   }
 }

@@ -60,7 +60,7 @@ main-content {
    }
 }
 
-.body-container{
+/* .body-container{
   display: flex;
   align-items:center;
   justify-content: space-evenly;
@@ -70,5 +70,12 @@ main-content {
   @media (max-width: 767px) {
    flex-direction: column; 
    padding-top: 5%;
-  }
-}
+  } */
+  .body-container {
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+     max-width: 50%;
+     margin: auto;
+     text-align: center;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   }
+
