@@ -41,7 +41,7 @@ const Blog = () => {
     <section className='page blog-container'>
       <header className='page-header'>
         <p className='eyebrow'>Blog</p>
-        <h1 className='display'>Well-Balanced Tech</h1>
+        <h1 className='display'></h1>
       </header>
 
       {loading ? (
