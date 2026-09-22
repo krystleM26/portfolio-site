@@ -123,7 +123,7 @@ const Blog = () => {
   return (
     <section className='page blog-container'>
       <header className='page-header'>
-        <h1 className='display'>Blog</h1>
+        <h1 className='eyebrow'>Blog</h1>
       </header>
 
       <div className='blogs-list'>
