@@ -16,48 +16,62 @@ export default class ProjectsMenu extends Component {
     });
   };
 
-  renderContent = (projects) => {
-    return projects.map((project, index) => (
-      <div key={index} className={`project-sub-container-${index + 1}`}>
-        <h3>{project.title}</h3>
-        <img src={project.image} alt={project.title} />
-        <div>{project.description}</div>
-        <div className="link-container">
-          <a href={project.github} target="_blank" rel="noopener noreferrer">
-            GITHUB
-          </a>
-          <a href={project.demo} target="_blank" rel="noopener noreferrer">
-            DEMO
-          </a>
+  renderContent = (project) => {
+    const hasDemo = /^https?:\/\//.test(project.demo);
+    return (
+      <article key={project.title} className="card project-card">
+        <div className="project-image">
+          <img src={project.image} alt={project.title} />
         </div>
-      </div>
-    ));
+        <div className="project-body">
+          <h2>{project.title}</h2>
+          <p>{project.description}</p>
+          <div className="link-container">
+            {hasDemo ? (
+              <a className="button" href={project.demo} target="_blank" rel="noopener noreferrer">
+                Live site
+              </a>
+            ) : (
+              <span className="button muted">Demo in progress</span>
+            )}
+            <a className="button ghost" href={project.github} target="_blank" rel="noopener noreferrer">
+              GitHub
+            </a>
+          </div>
+        </div>
+      </article>
+    );
   };
 
   render() {
-    
     const { activeProject } = this.state;
-    const projectItems = ["PROJECT ONE", "PROJECT TWO", "PROJECT THREE"]
+    const projectIds = Object.keys(projects).map(Number);
     return (
-      <div className="project-menu">
-        <div className="project-items-container">
-          {projectItems.map((item, index) => (
-            <div
-              key={index}
-              className={classNames('project-item', {
-                activeProject: activeProject === index + 1,
+      <section className="page project-menu">
+        <header className="page-header">
+          <p className="eyebrow">Selected work</p>
+          <h1 className="display">Projects</h1>
+        </header>
+
+        <div className="tabs" role="tablist">
+          {projectIds.map((id) => (
+            <button
+              key={id}
+              type="button"
+              role="tab"
+              aria-selected={activeProject === id}
+              className={classNames('tab', {
+                active: activeProject === id,
               })}
-              onClick={() => this.handleProjectClick(index + 1)}
+              onClick={() => this.handleProjectClick(id)}
             >
-              <h2 className="title">{item}</h2>
-            </div>
+              {projects[id].title}
+            </button>
           ))}
         </div>
-        <div className='project-sub-container'>
-              {this.renderContent([projects[activeProject]])}
 
-        </div>
-      </div>
+        {this.renderContent(projects[activeProject])}
+      </section>
     );
   }
 }

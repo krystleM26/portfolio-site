@@ -2,10 +2,8 @@ import React, { Component } from 'react';
 import classNames from 'classnames';
 import '../styles/skillsMenu.css';
 import skills from './skillsData.js';
-import frontendIcon from '../assets/eagle-emblem.png';
-import backendIcon from '../assets/hawk-emblem.png';
-import Avatar from '../avatar/Avatar.js';
 
+const MAX_LEVEL = 6;
 
 export default class SkillsMenu extends Component {
   constructor(props) {
@@ -23,14 +21,15 @@ export default class SkillsMenu extends Component {
 
   renderContent = (skills) => {
     return skills.map((skill, index) => (
-      <div
-        key={index}
-        className={`skill-sub-container-${this.state.activeMenuItem}`}
-      >
+      <li key={index} className="skill-row">
         <h3>{skill.title}</h3>
-        <div className="level-container">
-          {[...Array(6)].map((_, i) => (
-            <div
+        <div
+          className="level-container"
+          role="img"
+          aria-label={`${skill.level} out of ${MAX_LEVEL}`}
+        >
+          {[...Array(MAX_LEVEL)].map((_, i) => (
+            <span
               key={i}
               className={`level-point ${
                 i < skill.level ? 'filled' : 'unfilled'
@@ -38,39 +37,42 @@ export default class SkillsMenu extends Component {
             />
           ))}
         </div>
-      </div>
+      </li>
     ));
   };
 
   render() {
     const { activeMenuItem } = this.state;
-    const menuItems = ["FRONT-END", "BACK-END"];
-
-    const curIcon = activeMenuItem === 1 ? frontendIcon : backendIcon;
-    console.log(curIcon, 'curIcon')
+    const menuItems = ["Front-end", "Back-end"];
 
     return (
-      <div className='body-container' >
-        <Avatar page="skills"   />
-        <div className="skill-menu">
-        {menuItems.map((item, index) => (
-          <div 
-            key={index}
-            className={classNames('skill-item', {
-              activeSkill: activeMenuItem === index + 1,
-            })}
-            onClick={() => this.handleMenuItemClick(index + 1)}
-          >
-           
-              <h2>{item}</h2>
-          </div>
-        ))}
-        <img className="skill-icon" src={curIcon} alt="current skill" />
-        <div className="skill-sub-container">
-          {this.renderContent(skills[activeMenuItem])}
+      <section className="page skill-menu">
+        <header className="page-header">
+          <p className="eyebrow">Toolkit</p>
+          <h1 className="display">Skills</h1>
+        </header>
+
+        <div className="tabs" role="tablist">
+          {menuItems.map((item, index) => (
+            <button
+              key={index}
+              type="button"
+              role="tab"
+              aria-selected={activeMenuItem === index + 1}
+              className={classNames('tab', {
+                active: activeMenuItem === index + 1,
+              })}
+              onClick={() => this.handleMenuItemClick(index + 1)}
+            >
+              {item}
+            </button>
+          ))}
         </div>
-      </div>
-    </div>
+
+        <ul key={activeMenuItem} className="card skill-sub-container">
+          {this.renderContent(skills[activeMenuItem])}
+        </ul>
+      </section>
     );
   }
 }

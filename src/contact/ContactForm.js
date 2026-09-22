@@ -91,20 +91,28 @@ export default function ContactForm() {
     stagger: 3,
     width: '10px',
     height: '10px',
-    colors: ['#ff0000', '#00ff00', '#0000ff'],
+    colors: ['#2f5d46', '#7a9a6b', '#c9d8c0', '#c0714f', '#d4a27f'],
   };
 
   return (
 
-    <div className="contact-menu"> {/* Center the form */}
-    <h2>Work With Me!</h2>
+    <section className="page contact-menu">
+    <header className="page-header">
+      <p className="eyebrow">Contact</p>
+      <h1 className="display">Work with me</h1>
+      <p className="lede">
+        Have a project in mind or just want to say hello? Send a note and
+        I’ll get back to you.
+      </p>
+    </header>
 
-    <div className="overlay" style={{ display: isMessageSent ? 'block' : 'none' }}>
+    <div className="confetti-anchor">
         <Confetti active={isMessageSent} config={confettiConfig} />
       </div>
-    
+
       {!isMessageSent && (
-        <form onSubmit={handleSubmit} className="form-container">
+        <form onSubmit={handleSubmit} className="card form-container" noValidate>
+          <label htmlFor="name">Name</label>
           <input
             id="name"
             type="text"
@@ -114,6 +122,7 @@ export default function ContactForm() {
             placeholder="Your Name"
           />
           {errors.name && <div className="error">{errors.name}</div>}
+          <label htmlFor="email">Email</label>
           <input
             id="email"
             type="email"
@@ -123,6 +132,7 @@ export default function ContactForm() {
             placeholder="Your Email"
           />
           {errors.email && <div className="error">{errors.email}</div>}
+          <label htmlFor="message">Message</label>
           <textarea
             id="message"
             name="message"
@@ -131,18 +141,17 @@ export default function ContactForm() {
             placeholder="Your Message"
           ></textarea>
           {errors.message && <div className="error">{errors.message}</div>}
-          <button type="submit" disabled={isLoading}>
+          <button type="submit" className="button" disabled={isLoading}>
             {isLoading ? 'Sending...' : 'Send Message'}
           </button>
         </form>
       )}
       {isMessageSent && (
-        <div className="success-message">
-          <p>SUCCESS!!!</p>
-          <p>Message sent successfully!</p>
-          <p>You can exit this page</p>
+        <div className="card success-message">
+          <h2>Thank you!</h2>
+          <p>Your message was sent successfully. I’ll be in touch soon.</p>
         </div>
       )}
-    </div>
+    </section>
   );
 }

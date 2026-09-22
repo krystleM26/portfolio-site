@@ -12,15 +12,25 @@ import Blog from './blog/Blog';
 const App = () => {
   return (
     <Router>
-      <Nav />
-      <Background />
-      <Routes>
-        <Route path="/" element={<About />} />
-       <Route path="/skills" element={<Skills />}  />
-        <Route path="/projects" element={<Project />} />
-        <Route path="/contact" element={<Contact />} /> 
-        <Route path="/blog" element={<Blog />} />
-      </Routes>
+      <div className="app">
+        <Background />
+        <Nav />
+        <main className="main">
+          <Routes>
+            <Route path="/" element={<About />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/projects" element={<Project />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/blog" element={<Blog />} />
+          </Routes>
+        </main>
+        <footer className="footer">
+          © {new Date().getFullYear()} Krystle Mitchell ·{' '}
+          <a href="https://github.com/krystleM26" target="_blank" rel="noopener noreferrer">
+            GitHub
+          </a>
+        </footer>
+      </div>
     </Router>
   );
 };

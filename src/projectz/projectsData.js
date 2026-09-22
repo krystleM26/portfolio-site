@@ -1,27 +1,17 @@
-import projectOne from '../assets/project-1.png';
-import projectTwo from '../assets/project-2.png';
+import flurrySystems from '../assets/flurry-systems.png';
 import projectThree from '../assets/project-3.png';
 
 const projects = {
   1: {
-    title: 'Spin Wheel',
-    image: projectOne,
+    title: 'Flurry Systems',
+    image: flurrySystems,
     description:
-      'A productivity app to help you decide what to do when bored',
+      'An adaptive productivity ecosystem for people who value flow, not hustle. Flurry connects intelligent tools, templates, and automations into one platform that balances focus, wellness, and efficiency.',
 
-    github: 'https://github.com/krystleM26/spin-wheel',
-    demo: 'In Progress',
+    github: 'https://github.com/krystleM26/flurrysystems',
+    demo: 'https://flurrysystems.com',
   },
   2: {
-    title: 'Digitial Planner',
-    image: projectTwo,
-    description:
-      'Feeling disorganized? This app will help you plan your day, week, month, and year.',
-
-    github: 'https://github.com/krystleM26/everlastingPlans',
-    demo: 'In Progress',
-  },
-  3: {
     title: 'Mario Game',
     image: projectThree,
     description:

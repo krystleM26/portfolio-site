@@ -3,10 +3,6 @@ import AboutMenuItem from "./AboutMenuItem";
 import AboutSubheading from "./AboutSubheading";
 import subheadingsData from "./subheadingsData";
 import "../styles/aboutMenu.css";
-import personalIcon from '../assets/moebius-triangle.png';
-import educationIcon from '../assets/upgrade.png'
-import careerIcon from '../assets/triple-corn.png'
-import Avatar from "../avatar/Avatar.js";
 
 
 export default class AboutMenu extends Component {
@@ -16,8 +12,6 @@ export default class AboutMenu extends Component {
     this.state = {
       activeMenuItem: 1,
       activeSubheading: 1,
-      activeMenuIcon: 1
-
     }
 
   }
@@ -38,54 +32,36 @@ export default class AboutMenu extends Component {
 
   render() {
     const { activeMenuItem, activeSubheading } = this.state;
-    const menuItems = ["PERSONAL", "EDUCATION", "CAREER"];
-    const activeMenuTitle = menuItems[activeMenuItem - 1];
-    const activeMenuIcon = activeMenuTitle === "PERSONAL" ? personalIcon : activeMenuTitle === "EDUCATION" ? educationIcon : careerIcon;
-
-
+    const menuItems = ["Personal", "Education", "Career"];
 
     const subheadings = subheadingsData[activeMenuItem] || [];
 
 
     return (
-      <>
-      <div className="body-container">
-          <div className="menu">
-            {menuItems.map((item, index) => (
-              <AboutMenuItem
-                key={index}
-                title={item}
-                active={activeMenuItem === index + 1}
-                onClick={() => this.handleMenuItemClick(index + 1)}
-              />
-            ))}
-          </div>
-          <Avatar page="about" />
+      <div className="about-menu">
+        <div className="tabs" role="tablist">
+          {menuItems.map((item, index) => (
+            <AboutMenuItem
+              key={index}
+              title={item}
+              active={activeMenuItem === index + 1}
+              onClick={() => this.handleMenuItemClick(index + 1)}
+            />
+          ))}
+        </div>
 
-          <div className="sub-container">
-            <div className="icon-title-container">
-              <img src={activeMenuIcon} alt={activeMenuTitle} className="icon" />
-              <h3>{activeMenuTitle}</h3>
-            </div>
-
-            {subheadings.map((subheading, index) => (
-              <AboutSubheading
-                key={index}
-                title={subheading.title}
-                content={subheading.content}
-                active={activeSubheading === index + 1}
-                onClick={() => this.handleSubheadingClick(index + 1)}
-                menuItem={activeMenuItem}
-
-              />
-            ))}
-          </div>
+        <div className="card sub-container">
+          {subheadings.map((subheading, index) => (
+            <AboutSubheading
+              key={`${activeMenuItem}-${index}`}
+              title={subheading.title}
+              content={subheading.content}
+              active={activeSubheading === index + 1}
+              onClick={() => this.handleSubheadingClick(index + 1)}
+            />
+          ))}
+        </div>
       </div>
-      </>
     );
   }
 }
-
-
-
-

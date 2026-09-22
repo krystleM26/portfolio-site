@@ -1,108 +1,36 @@
-import React from 'react'
-import {Link, useLocation} from 'react-router-dom'
-import astronautHelmet from '../assets/astronaut-helmet.png'
-import deadEye from '../assets/dead-eye.png'
-import stack from '../assets/stack.png'
-import envelope from '../assets/envelope.png'
-import blog from '../assets/blog emblem.png'
-import "../styles/nav.css"
-import PlayerStats from '../playerStats/PlayerStats'
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import '../styles/nav.css';
+import PlayerStats from '../playerStats/PlayerStats';
+
+const links = [
+  { to: '/', label: 'About' },
+  { to: '/skills', label: 'Skills' },
+  { to: '/projects', label: 'Projects' },
+  { to: '/blog', label: 'Blog' },
+  { to: '/contact', label: 'Contact' },
+];
 
 export default function Nav() {
-    const location = useLocation();
-
-    const getNavPositionClass = () => {
-        switch (location.pathname){
-            case "/":
-              return "nav-about";
-            case "/skills":
-              return "nav-skills";
-              case "/projects":
-              return "nav-projects";
-            case "/contact":
-              return "nav-contact";
-            case "/blog":
-              return "nav-blog"
-            default:
-              return "";
-        }
-    }
-    const getPageTitle = () => {
-        switch (location.pathname){
-            case "/":
-              return "ABOUT";
-            case "/skills":
-              return "SKILLS";
-            case "/projects":
-              return "PROJECTS";
-            case "/contact":
-              return "CONTACT";
-            case "/blog":
-              return "BLOG"
-            default:
-              return "";
-        }
-
-    }
-
-    const navPositionClass = getNavPositionClass()
-    const pageTitle = getPageTitle()
-
-    const isCurrentPage = (navClass) => {
-        return navClass === navPositionClass;
-    }
-    
-
-
-    const renderNavLink = (to, imgSrc, altText, navClass) => {
-    const isCurrent = isCurrentPage(navClass)
-    const linkClass = isCurrent ? "nav-link current" :
-    "nav-link"
-
-    return (
-        <Link to ={to} className={linkClass}>
-            <img src={imgSrc} alt={altText} />
-            {isCurrent && <h1 className="page-title">{pageTitle}</h1>}
-        </Link>
-    )
- }
-
- return (
-    <div className='header'>
-      <PlayerStats />
-      <nav className={`nav $(navPositionClass)`}>
-        {renderNavLink(
-            "/",
-            astronautHelmet,
-            "astronaut helmet icon",
-            "nav-about"
-        )}
-        {renderNavLink(
-            "/skills",
-            deadEye,
-            "deadEye icon",
-            "nav-skills"
-        )}
-        {renderNavLink(
-            "/projects",
-            stack,
-            "stack icon",
-            "nav-projects"
-        )}
-        {renderNavLink(
-            "/contact",
-            envelope,
-            "envelope icon",
-            "nav-contact"
-        )}
-        {renderNavLink(
-            "/blog",
-            blog,
-            "blog icon",
-            "nav-blog"
-        )}
-      </nav>
-    </div>
- )
-  
+  return (
+    <header className="header">
+      <div className="header-inner">
+        <PlayerStats />
+        <nav className="nav">
+          {links.map(({ to, label }) => (
+            <NavLink
+              key={to}
+              to={to}
+              end
+              className={({ isActive }) =>
+                isActive ? 'nav-link current' : 'nav-link'
+              }
+            >
+              {label}
+            </NavLink>
+          ))}
+        </nav>
+      </div>
+    </header>
+  );
 }
